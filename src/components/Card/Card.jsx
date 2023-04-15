@@ -8,7 +8,7 @@ const Card = ({ results }) => {
             let { id, image, name, status, location } = char;
 
             return (
-                <div key={id} className="border-3 text-center p-3">
+                <div key={id} className="text-center p-3">
                     <div class="relative inline-block">
                         <img className="rounded-t-lg" src={image}></img>
                         {status === "Alive" ? (
@@ -24,12 +24,11 @@ const Card = ({ results }) => {
                                 {status}
                             </span>
                         )}
-                    </div>
-
-                    <div className="border-2 rounded-b-lg">
-                        <div className="font-bold text-xl"> {name}</div>
-                        <div>Last Location:</div>
-                        <div className="font-semibold">{location.name}</div>
+                        <div className="border-2 rounded-b-lg">
+                            <div className="font-bold text-xl"> {name}</div>
+                            <div>Last Location:</div>
+                            <div className="font-semibold">{location.name}</div>
+                        </div>
                     </div>
                 </div>
             );

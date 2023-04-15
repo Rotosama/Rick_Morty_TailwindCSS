@@ -24,12 +24,12 @@ function App() {
 
     return (
         <div className="bg-inherit  flex flex-column">
-            <h1 className="font-semibold">Characters</h1>
-            <Search setSearch={setSearch} updatePageNumber={updatePageNumber} />
-            <div className="grid gap-4">
-                <div className="columns-1">
+            
+            <section className="columns-1">
                     Filter component will be placed here
-                </div>
+                </section>
+            <div className="grid gap-4"><h1 className="font-semibold">Characters</h1>
+                <Search setSearch={setSearch} updatePageNumber={updatePageNumber} />
                 <div className="columns-4">
                     <Card results={results} />
                 </div>
